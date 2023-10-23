@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public class GreenRequest {
-
+    private final Long id;
     private final String state;
     private final String content;
 

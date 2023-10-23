@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3306/myplaylist
+    url: jdbc:mariadb://localhost:3306/trafficlight
     username: root
     password: 1029384756
   jpa:
