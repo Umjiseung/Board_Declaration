@@ -2,10 +2,7 @@ package com.example.demo.domain.board.data.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -13,12 +10,19 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Table(name = "table_board")
 public class Board {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Column(name = "board_id")
     private Long id;
+
+    @Column(name = "board_location")
     private String location;
+
+    @Column(name = "board_content")
     private String content;
 
 
